@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Alek Chakroff - Researcher</title>
+    <link rel="stylesheet" href="styles_new.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Alek Chakroff</div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="chakroff_resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="https://github.com/Chakroff/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/alekchakroff/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img class="background-img" src="background.png" alt="Background image">
+            <div class="portrait-container">
+                <img class="portrait" src="alek.png" alt="Alek Chakroff">
+            </div>
+            <div class="intro">
+                <h1>Alek Chakroff</h1>
+                <p>I’m a researcher based in the Bay Area, specializing in cognitive science, ethics, and technology. I love hiking and immersive art.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
