@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password Protected Link</title>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
     <script>
         function verifyPassword() {
             const password = prompt("Enter the CODE below. Please don't view source this time, play the game.");
@@ -15,10 +13,10 @@
             }
         }
     </script>
-</head>
-<body>
-    <h1>Welcome</h1>
-    <p>Click the button below to access the protected page.</p>
-    <button onclick="verifyPassword()">Access Protected Page</button>
-</body>
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <p>Click the button below to access the protected page.</p>
+        <button onclick="verifyPassword()">Access Protected Page</button>
+    </body>
 </html>
