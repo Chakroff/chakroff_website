@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Link</title>
+    <script>
+        function verifyPassword() {
+            const password = prompt("Enter the CODE below. Please don't view source this time, play the game.");
+            const correctPassword = "CDMX";
+            if (password === correctPassword) {
+                window.location.href = "https://omniglot.com/writing/_____.htm";
+            } else {
+                alert("AH AH AH, YOU DIDN'T SAY THE MAGIC WORD");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>Click the button below to access the protected page.</p>
+    <button onclick="verifyPassword()">Access Protected Page</button>
+</body>
+</html>
